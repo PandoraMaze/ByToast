@@ -56,7 +56,7 @@ class _MyHomePageState extends BasePageState<MyHomePage> {
       case 2:
         ByToast.withIcon(
           context,
-          'Succeed Tips',
+          'Success',
           Image.asset('images/ic_tips_ok.webp', alignment: Alignment.center),
           isOnTop: true,
         );

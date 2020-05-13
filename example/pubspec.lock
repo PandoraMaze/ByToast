@@ -18,10 +18,10 @@ packages:
   bytoast:
     dependency: "direct main"
     description:
-      name: bytoast
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "1.0.1"
+      path: ".."
+      relative: true
+    source: path
+    version: "1.0.2"
   charcode:
     dependency: transitive
     description:

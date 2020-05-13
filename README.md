@@ -9,7 +9,7 @@ A Toast Widget for Flutter.
 ### Add Dependency
 ```yaml
 dependencies:
-  bytoast: ^1.0.1
+  bytoast: ^1.0.2
 ```
 
 ### Usage
