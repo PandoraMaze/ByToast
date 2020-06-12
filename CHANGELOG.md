@@ -1,3 +1,8 @@
+## 1.1.0 - 2020/06/12
+
+* Export the Other Classes in *bytoast.dart*, so just import *bytoast.dart* is okay
+
+
 ## 1.0.2 - 2020/05/13
 
 * Slightly Adjust the UI

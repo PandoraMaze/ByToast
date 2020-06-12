@@ -1,5 +1,4 @@
 import 'package:bytoast/bytoast.dart';
-import 'package:bytoast/core/toast_style.dart';
 import 'package:flutter/material.dart';
 
 import 'base/page_widget.dart';
@@ -50,8 +49,10 @@ class _MyHomePageState extends BasePageState<MyHomePage> {
         toast(context, 'This is a Toast');
         break;
       case 1:
-        toast(context,
-            'This is a Long Long Long Long Long Long Long Long Long Long Long Long Long Toast');
+        toast(
+          context,
+          'This is a Long Long Long Long Long Long Long Long Long Long Long Long Long Toast',
+        );
         break;
       case 2:
         ByToast.withIcon(
@@ -62,8 +63,7 @@ class _MyHomePageState extends BasePageState<MyHomePage> {
         );
         break;
       case 3:
-        ByToast.withIcon(
-            context, 'U Got a new Msg', Icon(Icons.alarm, color: Colors.white));
+        ByToast.withIcon(context, 'U Got a new Msg', Icon(Icons.alarm, color: Colors.white));
         break;
       case 4:
         ByToast.more(

@@ -68,7 +68,7 @@ class ToastLayerState extends State<ToastLayer>
       columnWidgets
         ..add(_holder.iconPathTop)
         ..add(
-          SizedBox(height: 8.0),
+          SizedBox(height: 12.0),
         );
     }
     columnWidgets.add(Row(
@@ -97,7 +97,7 @@ class ToastLayerState extends State<ToastLayer>
               blurRadius: 2,
               spreadRadius: 1)
         ],
-        borderRadius: new BorderRadius.all(Radius.circular(4)),
+        borderRadius: new BorderRadius.all(Radius.circular(2)),
       ),
       child: _buildContent(),
     );

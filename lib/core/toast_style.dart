@@ -9,7 +9,7 @@ class ToastStyle {
   static const EdgeInsetsGeometry textPadding =
       EdgeInsets.only(left: 32, right: 32, top: 10, bottom: 10);
   static const EdgeInsetsGeometry textWithIconPadding =
-      EdgeInsets.only(left: 20, right: 20, top: 14, bottom: 14);
+      EdgeInsets.only(left: 20, right: 20, top: 16, bottom: 16);
 
   // Duration
   static const Duration shortDuration = Duration(milliseconds: 2400);
