@@ -1,7 +1,6 @@
+import 'package:bytoast/core/toast_data.dart';
+import 'package:bytoast/core/toast_style.dart';
 import 'package:flutter/material.dart';
-
-import 'toast_data.dart';
-import 'toast_style.dart';
 
 class ToastLayer extends StatefulWidget {
   ToastLayer({Key key, this.holder})
@@ -25,8 +24,10 @@ class ToastLayerState extends State<ToastLayer>
     _holder = widget.holder ?? ToastData();
   }
 
+  /// Set Visible
   void switchVisible(bool visible) => setState(() {});
 
+  /// Update the UI
   void refresh({
     ToastData holder,
   }) {

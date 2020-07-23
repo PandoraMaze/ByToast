@@ -1,15 +1,29 @@
+import 'package:bytoast/core/toast_style.dart';
 import 'package:flutter/material.dart';
 
-import 'toast_style.dart';
-
 class ToastData {
+  /// Toast Msg
   String msg;
+
+  /// Toast View Alignment in Screen
   Alignment gravity;
+
+  /// Shown Duration
   Duration duration;
+
+  /// Toast Background Color
   Color bgColor;
+
+  /// Text Color
   Color txtColor;
+
+  /// Text Size
   double txtSize;
+
+  /// Top Icon Path
   Widget iconPathTop;
+
+  /// Left Icon Path
   Widget iconPathLeft;
 
   /// Shown Duration When Init

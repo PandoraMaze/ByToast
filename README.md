@@ -1,5 +1,5 @@
 # ByToast
-[![pub package](https://img.shields.io/badge/pub-v1.0.1-brightgreen?style=flat&logo=flutter)](https://pub.dev/packages/bytoast) 
+[![pub package](https://img.shields.io/badge/pub-v1.1.1-brightgreen?style=flat&logo=flutter)](https://pub.dev/packages/bytoast) 
 [![author](https://img.shields.io/badge/author-:byk-4189d5?style=flat&logo=github)](https://github.com/bluesofy)
 
 A Toast Widget for Flutter.
@@ -13,7 +13,7 @@ A Toast Widget for Flutter.
 ### Add Dependency
 ```yaml
 dependencies:
-  bytoast: ^1.1.0
+  bytoast: ^1.1.1
 ```
 
 ### Usage
@@ -29,6 +29,3 @@ ByToast.withIcon();
 /// Toast For Customize
 ByToast.more();
 ```
-
-## Support or Contact
-- E-Mail: <bluesofy@live.cn>

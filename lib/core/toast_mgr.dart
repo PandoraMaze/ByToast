@@ -1,8 +1,7 @@
+import 'package:bytoast/core/toast_data.dart';
+import 'package:bytoast/core/toast_layer.dart';
+import 'package:bytoast/core/toast_style.dart';
 import 'package:flutter/material.dart';
-
-import 'toast_data.dart';
-import 'toast_layer.dart';
-import 'toast_style.dart';
 
 class ToastMgr {
   ToastMgr._();
@@ -22,6 +21,7 @@ class ToastMgr {
     return _instance;
   }
 
+  /// Create View
   showToast(
     BuildContext context, {
     ToastData data,
@@ -39,7 +39,7 @@ class ToastMgr {
     Duration showDuration;
     if (_entry == null) {
       _key = GlobalKey();
-      _entry = createOverlay(data.gravity, data);
+      _entry = _createOverlay(data.gravity, data);
 
       // Init Layout
       Overlay.of(context).insert(_entry);
@@ -57,19 +57,19 @@ class ToastMgr {
 
     await Future.delayed(showDuration);
 
-    if (checkTime(data.fadePoint)) {
+    if (_checkTime(data.fadePoint)) {
       _isShow = false;
       _entry.markNeedsBuild();
 
       await Future.delayed(ToastStyle.fadeOutTime);
-      if (checkTime(data.gonePoint)) {
+      if (_checkTime(data.gonePoint)) {
         _entry.remove();
         _entry = null;
       }
     }
   }
 
-  createOverlay(gravity, newHolder) => OverlayEntry(
+  _createOverlay(gravity, newHolder) => OverlayEntry(
         builder: (context) => IgnorePointer(
           child: Container(
             alignment: gravity,
@@ -86,6 +86,6 @@ class ToastMgr {
         ),
       );
 
-  bool checkTime(Duration target) =>
+  bool _checkTime(Duration target) =>
       DateTime.now().difference(_newTime).compareTo(target) > 0;
 }

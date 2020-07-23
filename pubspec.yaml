@@ -1,7 +1,9 @@
 name: bytoast
 description: A Toast Widget for Flutter. Pure Dart Code. Both Android and iOS. Can Show Simple Text Toast or with Image or Customize.
-version: 1.1.0
+version: 1.1.1
 homepage: https://github.com/PandoraMaze/ByToast
+
+publish_to: 'https://pub.dartlang.org'
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

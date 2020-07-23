@@ -1,4 +1,5 @@
 import 'package:bytoast/bytoast.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'base/page_widget.dart';
@@ -63,7 +64,8 @@ class _MyHomePageState extends BasePageState<MyHomePage> {
         );
         break;
       case 3:
-        ByToast.withIcon(context, 'U Got a new Msg', Icon(Icons.alarm, color: Colors.white));
+        ByToast.withIcon(
+            context, 'U Got a new Msg', Icon(Icons.alarm, color: Colors.white));
         break;
       case 4:
         ByToast.more(
@@ -80,17 +82,17 @@ class _MyHomePageState extends BasePageState<MyHomePage> {
   void initParams() {
     super.initParams();
     _funcMap = [
-      'Toast：Normal',
-      'Toast：Normal Wrap',
-      'Toast：Succeed Tips',
-      'Toast：With Img',
-      'Toast：Customization',
+      'Toast: Normal',
+      'Toast: Normal Wrap',
+      'Toast: Succeed Tips',
+      'Toast: With Img',
+      'Toast: Customization',
     ];
   }
 
   @override
   String getTitle() {
-    return "Toaster Demo";
+    return 'ByToaster Demo';
   }
 
   _switchGravity(value) {
@@ -119,6 +121,11 @@ class _MyHomePageState extends BasePageState<MyHomePage> {
             },
           )),
           SizedBox(height: 8.0),
+          Container(
+            padding: EdgeInsets.all(16),
+            alignment: Alignment.topLeft,
+            child: Text('Custom Position to:'),
+          ),
           RadioListTile(
             value: ToastStyle.top,
             title: Text('Top'),

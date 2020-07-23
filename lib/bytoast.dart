@@ -1,20 +1,20 @@
 library bytoast;
 
+import 'package:bytoast/core/toast_data.dart';
+import 'package:bytoast/core/toast_mgr.dart';
+import 'package:bytoast/core/toast_style.dart';
 import 'package:flutter/material.dart';
 
-import 'core/toast_data.dart';
-import 'core/toast_mgr.dart';
-import 'core/toast_style.dart';
-
-export 'core/toast_data.dart';
-export 'core/toast_mgr.dart';
-export 'core/toast_style.dart';
+export 'package:bytoast/core/toast_data.dart';
+export 'package:bytoast/core/toast_mgr.dart';
+export 'package:bytoast/core/toast_style.dart';
 
 class ByToast {
   ByToast._();
 
   /// Show Normal Toast
-  static void short(BuildContext context, String msg) => more(context, msg: msg);
+  static void short(BuildContext context, String msg) =>
+      more(context, msg: msg);
 
   /// Show Long Shown Toast
   static void long(BuildContext context, String msg) => more(
@@ -24,7 +24,9 @@ class ByToast {
       );
 
   /// Show Toast with Icon on Left/Top
-  static void withIcon(BuildContext context, String msg, Widget icon, {isOnTop = false}) => more(
+  static void withIcon(BuildContext context, String msg, Widget icon,
+          {isOnTop = false}) =>
+      more(
         context,
         msg: msg,
         iconPathLeft: isOnTop ? null : icon,
